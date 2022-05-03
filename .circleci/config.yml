@@ -4,6 +4,7 @@ jobs:
   build:
     docker:
       - image: cimg/base:2022.03
+    parallelism: 4
     steps:
       - checkout
       - run: echo "Building complete"
